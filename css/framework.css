@@ -1,0 +1,39 @@
+/*start main page  */
+.d-flex {
+    display: flex;
+}
+
+.m-padding {
+    padding: 20px;
+}
+
+.m-margin {
+    margin: 20px;
+}
+
+.p-relative {
+    position: relative;
+}
+/*end main page  */
+
+/* start ul */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* end ul */
+
+/* start a */
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* end a */
+/*start position formate */
+.main-position{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*end position formate */
