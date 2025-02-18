@@ -3,6 +3,18 @@
     display: flex;
 }
 
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
 .m-padding {
     padding: 20px;
 }
@@ -13,6 +25,26 @@
 
 .p-relative {
     position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+.text-center{
+    text-align: center;
 }
 /*end main page  */
 
@@ -37,3 +69,9 @@ a {
     transform: translateX(-50%);
 }
 /*end position formate */
+/*start border none */
+.border-none{
+    outline: none;
+    border: none;
+}
+/*end border none */
