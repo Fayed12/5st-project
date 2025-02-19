@@ -19,8 +19,16 @@
     padding: 20px;
 }
 
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
 .m-margin {
     margin: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
 }
 
 .p-relative {
@@ -45,6 +53,13 @@
 
 .text-center{
     text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+.m-background{
+    background-color:white;
 }
 /*end main page  */
 

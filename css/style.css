@@ -193,9 +193,6 @@ body{
     } 
 }
 /* start welcome */
-.welcome{
-    background-color: var(--main-content-background);
-}
 .welcome .head{
     background-color: var(--hover-color);
     padding: 20px;
@@ -256,6 +253,7 @@ body{
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        margin-bottom: 10px;
     }
     .welcome .image img{
         position: relative;
@@ -266,9 +264,6 @@ body{
 }
 /* end welcome */
 /* start Quick Draft */
-.Draft{
-    background-color: var(--main-content-background);
-}
 .Draft input , 
 .Draft textarea{
     display: block;
@@ -303,9 +298,6 @@ body{
 }
 /* end Quick Draft */
 /* start target  */
-.target{
-    background-color: var(--main-content-background);
-}
 .target p{
     margin-bottom: 20px;
 }
@@ -353,13 +345,19 @@ body{
     z-index: 1;
     color: white;
     top: -35px;
-    right: 0;
+    right: -13px;
     padding: 2px 5px;
     border-radius: 5px;
     font-size: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.target .card:nth-child(2) .card-stats .prog span::before{
+    background-color:#f59e0b ;
+}
+.target .card:nth-child(3) .card-stats .prog span::before{
+    background-color:#22c55e ;
 }
 .target .card .card-stats .prog span::after{
     content: "";
@@ -370,7 +368,13 @@ body{
     border: 10px solid;
     border-color:#0075ff transparent transparent transparent;
     top: -10px;
-    right: 5px;
+    right: -8px;
+}
+.target .card:nth-child(2) .card-stats .prog span::after{
+    border-color: #f59e0b transparent transparent transparent;
+}
+.target .card:nth-child(3) .card-stats .prog span::after{
+    border-color: #22c55e transparent transparent transparent;
 }
 .target .card:first-child i{
     background-color: #cce3ff;
@@ -404,9 +408,6 @@ body{
 }
 /* end target  */
 /* start Tickets  */
-.Ticket{
-    background-color: var(--main-content-background);
-}
 .Ticket .ticket-content{
     flex-wrap: wrap;
     gap: 20px;
@@ -448,3 +449,186 @@ body{
     }
 }
 /* end Tickets  */
+/* start news */
+.news .card:not(:last-child){
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: var(--hover-color) 2px solid;
+}
+.news .card img{
+    width: 120px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.news .card .text{
+    margin-right: 20px;
+}
+.news .card h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.news .card p{
+    font-size: 15px;
+    color: #777;
+}
+.news .card .day{
+    position: absolute;
+    right: 0;
+}
+.news .card .day span{
+    font-size: 15px;
+    background-color: var(--hover-color);
+    padding: 5px;
+    border-radius: 7px;
+}
+@media (max-width:768px) {
+    .news .card{
+        flex-direction: column;
+    }
+    .news h3{
+        text-align: center;
+    }
+    .news .card img{
+        margin-bottom: 10px;
+    }
+    .news .card .day{
+        position: relative;
+        margin-top: 10px;
+    }
+}
+/* end news */
+/* start tasks */
+.tasks .info:not(:last-child){
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: var(--hover-color) 2px solid;
+}
+.tasks .info .text h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.tasks .info .text p{
+    font-size: 15px;
+    color: #777;
+}
+.tasks .info:nth-child(5){
+    position: relative;
+}
+.tasks .info:nth-child(5)::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255 , 0.7);
+}
+@media (max-width:768px) {
+    .tasks .info{
+        margin-right: 10px;
+    }
+}
+/* end tasks */
+/* start Search */
+.search .search-content .card h3{
+    font-size: 18px;
+    color: #999;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.search .search-content .card ul li:not(:last-child){
+    margin-bottom: 35px;
+}
+.search .search-content .card:nth-child(2) ul li span{
+    padding: 5px;
+    background-color: var(--hover-color);
+    border-radius: 7px;
+}
+/* end Search */
+/* start uploads */
+.uploads .card:not(:last-child){
+    border-bottom: var(--hover-color) 2px solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.uploads .card img{
+    width: 40px;
+    margin-right: 10px;
+}
+.uploads .card .text h4{
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.uploads .card .text p{
+    font-size: 15px;
+    color: #777;
+}
+.uploads .card .size{
+    padding: 5px;
+    background-color: var(--hover-color);
+    height: fit-content;
+    border-radius: 7px;
+    font-size: 13px;
+}
+/* end uploads */
+/* start  Last Project*/
+.Last-Project ul{
+    padding-left: 25px;
+}
+.Last-Project ul::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.Last-Project ul li{
+    margin-bottom: 40px;
+}
+.Last-Project ul li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -33px;
+    border: 2px solid white;
+    outline: 2px solid var(--main-color);
+    background-color: var(--main-color);
+}
+.Last-Project ul li:nth-child(3)::before{
+    animation: move 1.5s linear infinite alternate;
+}
+.Last-Project ul li:nth-child(4)::before , 
+.Last-Project ul li:nth-child(5)::before{
+    background-color: white;
+}
+@keyframes move {
+    0%{
+        background-color: var(--main-color);
+    }
+    50%{
+        background-color: white;
+    }
+    100%{
+        background-color: var(--main-color);
+    }
+}
+.Last-Project img{
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    width: 200px;
+    opacity: .4;
+}
+@media (max-width:768px) {
+    .Last-Project img{
+        display: none;
+    }
+    
+}
+/* end  Last Project*/
