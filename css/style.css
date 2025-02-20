@@ -577,6 +577,9 @@ body{
 .Last-Project ul{
     padding-left: 25px;
 }
+.Last-Project ul li:not(:last-child){
+    margin-bottom: 35px;
+}
 .Last-Project ul::before{
     content: "";
     position: absolute;
@@ -585,9 +588,6 @@ body{
     width: 3px;
     height: 100%;
     background-color: var(--main-color);
-}
-.Last-Project ul li{
-    margin-bottom: 40px;
 }
 .Last-Project ul li::before{
     content: "";
@@ -629,6 +629,86 @@ body{
     .Last-Project img{
         display: none;
     }
-    
 }
 /* end  Last Project*/
+/* start reminder */
+.reminder .card{
+    margin-left: 35px;
+    padding-left: 20px;
+    position: relative;
+}
+.reminder .card::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.reminder .one{
+    border-left: 3px solid var(--main-color);
+}
+.reminder .one::before{
+    background-color: var(--main-color);
+}
+.reminder .two{
+    border-left: 3px solid #22c55e;
+}
+.reminder .two::before{
+    background-color: #22c55e;
+}
+.reminder .three{
+    border-left: 3px solid #f59e0b;
+}
+.reminder .three::before{
+    background-color: #f59e0b;
+}
+.reminder .four{
+    border-left: 3px solid #f44336;
+}
+.reminder .four::before{
+    background-color: #f44336;
+}
+.reminder .card h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.reminder .card p{
+    font-size: 15px;
+    color: #777;
+}
+/* end reminder */
+/* start last post */
+.last-post .title img{
+    width: 50px;
+    margin-right: 15px;
+}
+.last-post .title h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.last-post .title p{
+    font-size: 15px;
+    color: #777;
+}
+.last-post .title{
+    border-bottom: 2px solid var(--hover-color);
+}
+.last-post .quate{
+    text-align: center;
+    border-bottom: 2px solid var(--hover-color);
+    margin: 40px 0;
+    padding-bottom:40px ;
+}
+.last-post .reaction p{
+    font-size: 15px;
+    color: #777;
+}
+.last-post .reaction p i{
+    margin-right: 5px;
+}
+/* end last post */
