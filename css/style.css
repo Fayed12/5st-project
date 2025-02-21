@@ -345,7 +345,7 @@ body{
     z-index: 1;
     color: white;
     top: -35px;
-    right: -13px;
+    right: -15px;
     padding: 2px 5px;
     border-radius: 5px;
     font-size: 13px;
@@ -368,7 +368,7 @@ body{
     border: 10px solid;
     border-color:#0075ff transparent transparent transparent;
     top: -10px;
-    right: -8px;
+    right: -10px;
 }
 .target .card:nth-child(2) .card-stats .prog span::after{
     border-color: #f59e0b transparent transparent transparent;
@@ -580,6 +580,12 @@ body{
 .Last-Project ul li:not(:last-child){
     margin-bottom: 35px;
 }
+@media (max-width:768px) {
+    .Last-Project ul li{
+        font-size: 14px;
+    }
+    
+}
 .Last-Project ul::before{
     content: "";
     position: absolute;
@@ -680,6 +686,15 @@ body{
     font-size: 15px;
     color: #777;
 }
+@media (max-width:768px) {
+    .reminder .card h4{
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    .reminder .card p{
+        font-size: 9px;
+    }
+}
 /* end reminder */
 /* start last post */
 .last-post .title img{
@@ -712,3 +727,82 @@ body{
     margin-right: 5px;
 }
 /* end last post */
+/* start media */
+.media .card{
+    padding: 10px;
+    border-radius: 10px;
+}
+.media .card:nth-child(2){
+    background-color: rgb(0, 119, 181,.4);
+}
+.media .card:nth-child(3){
+    background-color: rgb(13, 105, 213, .4);
+}
+.media .card:nth-child(4){
+    background-color: rgb(255, 0, 0 , .4);
+}
+.media .card:last-child{
+    background-color: rgb(29, 161, 242 , .4);
+}
+.media .card .info i{
+    font-size: 20px;
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+.media .card:nth-child(2) .info i{
+    background-color: rgb(0, 119, 181);
+}
+.media .card:nth-child(3) .info i{
+    background-color: rgb(13, 105, 213);
+}
+.media .card:nth-child(4) .info i{
+    background-color: rgb(255, 0, 0 );
+}
+.media .card:last-child .info i{
+    background-color: rgb(29, 161, 242);
+}
+.media .card .info span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.media .card:nth-child(2) span i{
+    background-color: rgb(0, 119, 181);
+}
+.media .card:nth-child(3) span i{
+    background-color: rgb(13, 105, 213);
+}
+.media .card:nth-child(4) span i{
+    background-color: rgb(255, 0, 0 );
+}
+.media .card:last-child span i{
+    background-color: rgb(29, 161, 242);
+}
+.media .card span i{
+    font-size: 18px;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .media .card .info span{
+        font-size: 14px;
+    }
+    .media .card .info i{
+        font-size: 18px;
+    }
+    .media .card span i{
+        font-size: 16px;
+    }
+}
+/* end media */
