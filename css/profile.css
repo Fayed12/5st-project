@@ -1,0 +1,4 @@
+/* content */
+.content .header-word::before{
+    width: 20px;
+}
