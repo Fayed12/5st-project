@@ -146,6 +146,17 @@ body{
     transform: translateY(-50%);
     color: #888;
 }
+.content .header .notification a{
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: var(--main-transition);
+    margin-right: 10px;
+}
+.content .header .notification a:hover{
+    background-color: var(--socend-color);
+}
 .content .header .notification i{
     font-size: 22px;
 }
@@ -155,8 +166,8 @@ body{
     width: 10px;
     height: 10px;
     background-color: red;
-    top: 0;
-    left: 13px;
+    top: -3px;
+    right: 43px;
     border-radius: 50%;
 }
 .content .header .notification img{
