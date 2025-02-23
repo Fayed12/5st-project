@@ -1,5 +1,8 @@
 /* start content */
+.content .header-word::after{
+    width: 100px;
+}
 .content .header-word::before{
-    width: 50px;
+    width: 62.5px;
 }
 /* end content */

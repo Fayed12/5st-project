@@ -61,6 +61,10 @@
 .m-background{
     background-color:white;
 }
+.dirrction-rtl{
+    direction: rtl;
+    text-align: right;
+}   
 /*end main page  */
 
 /* start ul */

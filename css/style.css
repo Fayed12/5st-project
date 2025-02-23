@@ -52,6 +52,11 @@ body{
     border-bottom: 2px solid black;
     width: fit-content;
 }
+.sidebar .logo h3 span{
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 700;
+}
 .sidebar .logo::before{
     content: "";
     position: absolute;
@@ -139,6 +144,14 @@ body{
 .content .header .search input:focus{
     width: 200px;
 }
+@media (max-width:768px) {
+    .content .header .search input{
+        width: 100px;
+    } 
+    .content .header .search input:focus{
+        width: 140px;
+    }
+}
 .content .header .search i{
     position: absolute;
     left: 10px;
@@ -182,7 +195,7 @@ body{
 .content .header-word::after{
     content: "";
     position: absolute;
-    width: 80px;
+    width: 130px;
     height: 3px;
     background-color: var(--main-content-background);
     bottom: -10px;
@@ -191,7 +204,7 @@ body{
 .content .header-word::before{
     content: "";
     position: absolute;
-    width: 10px;
+    width: 16.25px;
     height: 3px;
     background-color: black;
     bottom: -10px;
@@ -208,7 +221,7 @@ body{
 }
 @media (max-width:768px) {
     .all-content{
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     } 
 }
 /* start welcome */
@@ -306,6 +319,10 @@ body{
     position: absolute;
     right: 20px;
     bottom: 0;
+    cursor: pointer;
+}
+.Draft input[type="submit"]:hover{
+    background-color: var(--socend-color);
 }
 @media (max-width:1200px) {
     .Draft{
@@ -532,6 +549,16 @@ body{
     font-size: 15px;
     color: #777;
 }
+.tasks .info i{
+    transition-duration: var(--main-transition) ;
+    transition-property: color;
+    
+    cursor: pointer;
+}
+.tasks .info i:hover{
+    font-size: 18px;
+    color: var(--main-color);
+}
 .tasks .info:nth-child(5){
     position: relative;
 }
@@ -545,7 +572,7 @@ body{
     background-color: rgb(255, 255, 255 , 0.7);
 }
 @media (max-width:768px) {
-    .tasks .info{
+    .tasks .info .text{
         margin-right: 10px;
     }
 }
@@ -575,10 +602,12 @@ body{
 .uploads .card img{
     width: 40px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .uploads .card .text h4{
     font-weight: 500;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 .uploads .card .text p{
     font-size: 15px;
@@ -758,10 +787,10 @@ body{
     background-color: rgb(13, 105, 213, .4);
 }
 .media .card:nth-child(4){
-    background-color: rgb(255, 0, 0 , .4);
+    background-color: rgb(29, 161, 242 , .4);
 }
 .media .card:last-child{
-    background-color: rgb(29, 161, 242 , .4);
+    background-color: rgb(255, 0, 0 , .4);
 }
 .media .card .info i{
     font-size: 20px;
@@ -781,10 +810,10 @@ body{
     background-color: rgb(13, 105, 213);
 }
 .media .card:nth-child(4) .info i{
-    background-color: rgb(255, 0, 0 );
+    background-color: rgb(29, 161, 242);
 }
 .media .card:last-child .info i{
-    background-color: rgb(29, 161, 242);
+    background-color: rgb(255, 0, 0 );
 }
 .media .card .info span{
     font-size: 18px;
@@ -797,10 +826,10 @@ body{
     background-color: rgb(13, 105, 213);
 }
 .media .card:nth-child(4) span i{
-    background-color: rgb(255, 0, 0 );
+    background-color: rgb(29, 161, 242);
 }
 .media .card:last-child span i{
-    background-color: rgb(29, 161, 242);
+    background-color: rgb(255, 0, 0 );
 }
 .media .card span i{
     font-size: 18px;
@@ -830,8 +859,12 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    /* max-width: calc(100% - 40px); */
 }
+/* @media (max-width:768px) {
+    .table{
+        margin: 0 10px;
+    }
+} */
 .table .table-overflow{
     overflow-x: auto;
 }
