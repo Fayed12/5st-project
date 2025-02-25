@@ -57,6 +57,14 @@ body{
     color: var(--main-color);
     font-weight: 700;
 }
+@media (max-width:768px) {
+    .sidebar .logo h3{
+        font-size: 14px;
+    }
+    .sidebar .logo h3 span{
+        font-size: 16px;
+    }
+}
 .sidebar .logo::before{
     content: "";
     position: absolute;
@@ -136,7 +144,7 @@ body{
 .content .header .search input{
     border: 1px solid #999;
     border-radius: 10px;
-    text-indent: 40px;
+    text-indent: 30px;
     width: 170px;
     height: 38px;
     transition: var(--main-transition);
@@ -146,10 +154,10 @@ body{
 }
 @media (max-width:768px) {
     .content .header .search input{
-        width: 100px;
+        width: 95px;
     } 
     .content .header .search input:focus{
-        width: 140px;
+        width: 120px;
     }
 }
 .content .header .search i{

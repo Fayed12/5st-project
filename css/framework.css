@@ -3,6 +3,14 @@
     display: flex;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.gap{
+    gap: 20px;
+}
+
 .align-center {
     align-items: center;
 }
@@ -66,7 +74,10 @@
     text-align: right;
 }   
 /*end main page  */
-
+/* profile page */
+.box-margin{
+    margin-right: 30px;
+}
 /* start ul */
 ul {
     list-style-type: none;

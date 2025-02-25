@@ -1,3 +1,49 @@
+/*start main formate */
+label{
+    margin: 10px 0 0;
+}
+.checkbox-input{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.switch{
+    background-color: #cccccc;
+    width: 80px;
+    height: 20px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.checkbox-input:checked + .switch{
+    background-color: var(--main-color);
+}
+ .switch::before {
+    content: "✘";
+    font-weight: 900;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+    font-size: 10px;
+ }
+ .checkbox-input:checked + .switch::before{
+    content: "✔";
+    background-color:white;
+    color: var(--main-color);
+    font-size: 10px;
+    left: 63px;
+}
+/* end main fomate */
 /* start content */
 .content .header-word::after{
     width: 80px;
@@ -6,3 +52,110 @@
     width: 20px;
 }
 /* end content */
+/* start info */
+.info{
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.info .one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 18%;
+}
+.info .one h3{
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.info .one span:first-of-type{
+    display: block;
+    margin-bottom: 15px;
+    color: #999;
+}
+.info .one .prog{
+    width: 120px;
+    height: 5px;
+    background-color: var(--hover-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.info .one .prog span{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.info .one .icon i{
+    color: goldenrod;
+    font-size: 13px;
+}
+.info .one .icon {
+    margin-bottom: 15px;
+}
+.info .one span:last-of-type{
+    font-size: 13px;
+    color: #999;
+}
+@media (max-width:1100px) {
+    .info .one{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid var(--hover-color);
+    }
+}
+.info .all{
+    position: relative;
+    flex-basis: 80%;
+}
+.info .all::before{
+    content: "";
+    background-color: var(--hover-color);
+    width: 2px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.info .detail .box{
+    flex-wrap: wrap;
+}
+.info .detail:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--hover-color);
+    width: 100%;
+    transition: var(--main-transition);
+}
+.info .detail:hover{
+    background-color: var(--hover-color);
+}
+.info .detail .box h4{
+    width: 100%;
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.info .detail .box .box-one{
+    font-size: 15px;
+    color: #999;
+}
+.info .detail .box{
+    line-height: 30px;
+}
+.info .detail .box label {
+    width: 100%;
+    text-align: left;
+}
+/* end info */
+/* start skills-activity */
+.skills-activity .skills{
+    flex-basis: 35%;
+}
+.skills-activity .activity{
+    flex-basis: 62%;
+}
+/* end skills-activity */

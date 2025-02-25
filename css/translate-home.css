@@ -10,9 +10,22 @@
 /*start sidebar */
 .sidebar .logo{
     position: relative;
-    left: 0;
+    right: 50%;
+    transform: translateX(50%);
 }
-/*start sidebar */
+@media (max-width:768px) {
+    .sidebar .logo{
+        right: 10px;
+    }
+    .sidebar  ul{
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .sidebar ul li a i{
+        margin-left: 0;
+    }
+}
+/*end sidebar */
 /*start content header */
 .content .header .notification img{
     margin-right: 10px;
