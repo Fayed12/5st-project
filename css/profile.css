@@ -19,7 +19,7 @@ label{
 .checkbox-input:checked + .switch{
     background-color: var(--main-color);
 }
- .switch::before {
+.switch::before {
     content: "✘";
     font-weight: 900;
     background-color: white;
@@ -112,6 +112,11 @@ label{
     position: relative;
     flex-basis: 80%;
 }
+@media (max-width:992px) {
+    .info .all {
+    flex-basis: 100%;
+    }
+}
 .info .all::before{
     content: "";
     background-color: var(--hover-color);
@@ -120,6 +125,9 @@ label{
     position: absolute;
     top: 10%;
     left: 0;
+}
+.info .detail {
+    width: 100%;
 }
 .info .detail .box{
     flex-wrap: wrap;
@@ -131,7 +139,7 @@ label{
     transition: var(--main-transition);
 }
 .info .detail:hover{
-    background-color: var(--hover-color);
+    background-color: #f2f1f1;
 }
 .info .detail .box h4{
     width: 100%;
@@ -153,9 +161,94 @@ label{
 /* end info */
 /* start skills-activity */
 .skills-activity .skills{
-    flex-basis: 35%;
+    flex-grow: .5;
 }
 .skills-activity .activity{
-    flex-basis: 62%;
+    flex-grow: 2;
+}
+@media (max-width:918px) {
+    .skills-activity .skills{
+        flex-basis: 100%;
+        text-align: center;
+    } 
+    .skills-activity .skills .main-head-h3{
+        text-align: center;
+    }
+    .skills-activity .activity{
+        flex-basis: 100%;
+    }
+}
+.skills-activity .skills ul{
+    margin-top:20px ;
+}
+.skills-activity .skills ul li:not(:last-child){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--hover-color);
+}
+.skills-activity .skills ul li span{
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--hover-color);
+    padding: 5px 10px ;
+    border-radius: 10px;
+    transition: var(--main-transition);
+}
+.skills-activity .skills ul li span:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.skills-activity .activity .activity-all {
+    margin-top: 20px;
+}
+.skills-activity .activity .activity-all .box:not(:last-child){
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--hover-color);
+}
+.skills-activity .activity .activity-all .box img{
+    width: 60px;
+}
+.skills-activity .activity .activity-all .box div:first-of-type h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.skills-activity .activity .activity-all .box div:first-of-type p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+}
+.skills-activity .activity .activity-all .box div:last-child{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    text-align: right;
+}
+.skills-activity .activity .activity-all .box div:last-child span:first-child{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.skills-activity .activity .activity-all .box div:last-child span:last-child{
+    margin-bottom: 2px;
+    font-size: 15px;
+    color: #999;
+}
+@media (max-width:768px) {
+    .skills-activity .activity .activity-all .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills-activity .activity .activity-all .box img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .skills-activity .activity .activity-all .box div:last-child{
+        position: relative;
+        text-align: center;
+    }
 }
 /* end skills-activity */

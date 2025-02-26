@@ -1,0 +1,37 @@
+@media (max-width:1100px) {
+    .info .one{
+        position: relative;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+.info .all::before{
+    content: "";
+    background-color: var(--hover-color);
+    width: 2px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 100%;
+}
+.info .detail .box label {
+    text-align: right;
+}
+.skills-activity .activity .activity-all .box div:last-child{
+    position: absolute;
+    right: 92%;
+    margin: 0;
+    text-align: right;
+}
+@media (max-width:768px) {
+    .skills-activity .activity .activity-all .box img {
+        position: relative;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .skills-activity .activity .activity-all .box div:last-child{
+        position: relative;
+        text-align: center;
+        right: 0;
+    }
+}

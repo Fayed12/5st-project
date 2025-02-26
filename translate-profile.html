@@ -12,7 +12,11 @@
     <!-- main css file -->
     <link rel="stylesheet" href="css/style.css">
     <!-- main profile css file -->
-     <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <!-- translate home -->
+     <link rel="stylesheet" href="css/translate-home.css">
+    <!-- translate profile -->
+    <link rel="stylesheet" href="css/translate-profile.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,58 +25,55 @@
     <title>Profile</title>
 </head>
 <body>
-    <div class="all-page d-flex">
-        <div class="sidebar m-padding p-relative">
-            <div class="logo main-position p-relative">
+    <div class="all-page d-flex dirrction-rtl">
+        <div class="sidebar m-padding p-relative dirrction-rtl">
+            <div class="logo p-relative">
                 <h3><span>P</span>rep<span>P</span>al</h3>
             </div>
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="translate-home.html">
                         <i class="fa-solid fa-house fa-fw"></i>
-                        <span>Home</span>
+                        <span>الرئسيه</span>
                         </a>
                     </li>
-                    <li   class="active">
-                        <a href="profile.html">
+                    <li  class="active">
+                        <a href="translate-profile.html">
                         <i class="fa-solid fa-user fa-fw "></i>
-                        <span>Profile</span>
+                        <span>حساب الشخصي</span>
                     </a>
                     </li>
-                    <li>
-                        <a href="project.html">
+                    <li><a href="project.html">
                         <i class="fa-solid fa-folder-open fa-fw "></i>
-                        <span>Projects</span>
-                        </a>
+                        <span>المشاريع</span>
+                    </a>
                     </li>
-                    <li>
-                        <a href="files.html">
+                    <li><a href="files.html">
                         <i class="fa-solid fa-file fa-fw "></i>
-                        <span>Files</span>
+                        <span>الملفات</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="cources.html">
+                    <li><a href="cources.html">
                         <i class="fa-solid fa-book fa-fw "></i>
-                        <span>Courses</span>
-                        </a>
+                        <span>الكورسات</span>
+                    </a>
                     </li>
                     <li>
                         <a href="frinds.html">
                             <i class="fa-solid fa-user-group fa-fw "></i>
-                            <span>Friends</span>
+                            <span>الاصدقاء</span>
                         </a>
                     </li>
                     <li>
                         <a href="Settings.html">
                         <i class="fa-solid fa-gear fa-fw"></i>
-                        <span>Settings</span>
+                        <span>الاعدادات</span>
                         </a>
                     </li>
                     <li>
                         <a href="plans.html">
                         <i class="fa-solid fa-credit-card fa-fw "></i>
-                        <span>Plans</span>
+                        <span>ترقيه</span>
                         </a>
                     </li>
                 </ul>
@@ -80,22 +81,22 @@
         <div class="content w-100">
             <div class="header d-flex m-padding align-center">
                 <div class="search p-relative">
-                    <input class="border-none" type="text" placeholder="Search">
+                    <input class="border-none" type="text" placeholder="بحث">
                     <i class="fa-solid fa-search"></i>
                 </div>
                 <div class="notification d-flex align-center justify-center p-relative">
-                    <a href="translate-profile.html">Arabic</a>
+                    <a href="profile.html">English</a>
                     <i class="fa-solid fa-bell p-relative"></i>
                     <img src="image/home page/header-avatar.png" alt="image">
                 </div>
             </div>
-            <h2 class="header-word p-relative">Profile</h2>
+            <h2 class="header-word p-relative"> حساب الشخصي</h2>
             <!-- start info -->
             <div class="info d-flex m-background m-margin border-radius">
                 <div class="one m-padding">
                     <img src="image/profile/avatar.png" alt="image" width="100px">
-                    <h3>Mohamed Fayed</h3>
-                    <span>Level 20</span>
+                    <h3>محمد فايد</h3>
+                    <span>المستوى 20</span>
                     <div class="prog">
                         <span style=" width: 60%;"></span>
                     </div>
@@ -106,20 +107,20 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <span>550 Rating</span>
+                    <span>550 تقييم</span>
                 </div>
                 <div class="all">
                     <div class="detail m-padding">
                         <div class="box d-flex">
-                            <h4>General Information</h4>
+                            <h4>معلومات عامة</h4>
                             <div class="box-margin">
-                                <span class="box-one">Full Name:</span><span>Mohamed fayed</span>
+                                <span class="box-one">الاسم الكامل:</span><span>محمد فايد</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Gender:</span> <span>Male</span>
+                                <span class="box-one">النوع:</span> <span>ذكر</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Country:</span> <span>Egypt</span> 
+                                <span class="box-one">البلد:</span> <span>مصر</span> 
                             </div>
                             <label>
                                 <input type="checkbox" checked class="checkbox-input">
@@ -129,15 +130,15 @@
                     </div>
                     <div class="detail m-padding">
                         <div class="box d-flex">
-                            <h4>Personal Information</h4>
+                            <h4>معلمات شخصيه</h4>
                             <div class="box-margin">
-                                <span class="box-one">Email:</span><span>o@nn.sa</span>
+                                <span class="box-one">الايميل:</span><span>o@nn.sa</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Phone:</span> <span>019123456789</span>
+                                <span class="box-one">الرقم:</span> <span>019123456789</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Date Of Birth:</span> <span>25/10/1982</span> 
+                                <span class="box-one">تاريخ الميلاد:</span> <span>25/10/1982</span> 
                             </div>
                             <label>
                                 <input type="checkbox" class="checkbox-input">
@@ -147,15 +148,15 @@
                     </div>
                     <div class="detail m-padding">
                         <div class="box d-flex">
-                            <h4>Job Information</h4>
+                            <h4>معلومات الوظيفه</h4>
                             <div class="box-margin">
-                                <span class="box-one">Title:</span><span>Full Stack Developer</span>
+                                <span class="box-one">الاسم التعريفي:</span><span>Full Stack Developer</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Programming Language:</span> <span>Python</span>
+                                <span class="box-one">اللغه المستخدمه:</span> <span>Python</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Years Of Experience:</span> <span>15+</span> 
+                                <span class="box-one">سنوات الخبره:</span> <span>15+</span> 
                             </div>
                             <label>
                                 <input type="checkbox" checked class="checkbox-input">
@@ -165,15 +166,15 @@
                     </div>
                     <div class="detail m-padding">
                         <div class="box d-flex">
-                            <h4>Billing Information</h4>
+                            <h4>معلومات الدفع</h4>
                             <div class="box-margin">
-                                <span class="box-one">Payment Method:</span><span>Paypal</span>
+                                <span class="box-one">طريقة الدفع:</span><span>Paypal</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Email:</span> <span>email@website.com</span>
+                                <span class="box-one">الايميل:</span> <span>email@website.com</span>
                             </div>
                             <div class="box-margin">
-                                <span class="box-one">Subscription:</span> <span>Monthly</span> 
+                                <span class="box-one">الاشتراك:</span> <span>Monthly</span> 
                             </div>
                             <label>
                                 <input type="checkbox" checked class="checkbox-input">
@@ -187,8 +188,8 @@
             <!-- start skills and Activities -->
              <div class="skills-activity d-flex flex-wrap gap m-margin ">
                 <div class="skills m-padding m-background border-radius">
-                    <h3 class="main-head-h3">My Skills</h3>
-                    <p class="main-para-h3-p">Complete Skills List</p>
+                    <h3 class="main-head-h3">مهاراتي</h3>
+                    <p class="main-para-h3-p">قائمة المهارات الكامله</p>
                     <ul>
                         <li>
                             <span>HTML</span>
@@ -219,51 +220,51 @@
                     </ul>
                 </div>
                 <div class="activity m-background m-padding border-radius">
-                    <h3 class="main-head-h3">Latest Activities</h3>
-                    <p class="main-para-h3-p">Latest Activities Done By The User</p>
+                    <h3 class="main-head-h3">احدث الانشطه</h3>
+                    <p class="main-para-h3-p">اخر الانشطه التي تمت بواسطة المستخدم</p>
                     <div class="activity-all">
                         <div class="box d-flex gap margin-bottom p-relative">
                             <img src="image/profile/activity-01 (1).png" alt="image" width="100px">
                             <div>
-                                <h3>Store</h3>
-                                <p>Bought The Mastering Python Course</p>
+                                <h3>المتجر</h3>
+                                <p>شراء دورة تعلم بايثون</p>
                             </div>
                             <div >
                                 <span>18:10</span>
-                                <span>Yesterday</span>
+                                <span>امس</span>
                             </div>
                         </div>
                         <div class="box d-flex gap margin-bottom p-relative">
                             <img src="image/profile/activity-02.png" alt="image" width="100px">
                             <div>
-                                <h3>Academy</h3>
-                                <p>Got The PHP Certificate</p>
+                                <h3>الاكادمية</h3>
+                                <p>الحصول على شهادة لغة php</p>
                             </div>
                             <div>
                                 <span>16:05</span>
-                                <span>Yesterday</span>
+                                <span>امس</span>
                             </div>
                         </div>
                         <div class="box d-flex gap margin-bottom p-relative">
                             <img src="image/profile/activity-03.png" alt="image" width="100px">
                             <div>
-                                <h3>Badges</h3>
-                                <p>Unlocked The 10 Skills Badge</p>
+                                <h3>الشارات</h3>
+                                <p>فتح 10 شارات جديده</p>
                             </div>
                             <div>
                                 <span>18:05</span>
-                                <span>Yesterday</span>
+                                <span>امس</span>
                             </div>
                         </div>
                         <div class="box d-flex gap p-relative">
                             <img src="image/profile/activity-01 (1).png" alt="image" width="100px">
                             <div>
-                                <h3>Store</h3>
-                                <p>Bought The Typescript Course</p>
+                                <h3>المتجر</h3>
+                                <p>شراء كورس تايب سكريبت</p>
                             </div>
                             <div>
                                 <span>12:05</span>
-                                <span>Yesterday</span>
+                                <span>امس</span>
                             </div>
                         </div>
                     </div>
