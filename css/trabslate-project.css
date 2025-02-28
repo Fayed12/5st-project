@@ -1,0 +1,39 @@
+/*start images */
+.project-content .box .images img:nth-child(2){
+    position: relative;
+    right: -20px;
+}
+.project-content .box .images img:nth-child(3){
+    position: relative;
+    right: -40px;
+}
+.project-content .box .images img:nth-child(4){
+    position: relative;
+    right: -60px;
+}
+.project-content .box .images img:nth-child(5){
+    position: relative;
+    right: -80px;
+}
+/* end images */
+/* start info */
+.project-content .box .project-info{
+    direction: ltr;
+    justify-content: flex-start;
+}
+/* end info */
+/* madia header */
+@media (max-width:768px) {
+    .project-content .main-head-h3{
+        text-align: right;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .project-content .main-para-h3-p{
+       font-size: 10px;
+        font-weight: 500;
+        color: #777;
+    }
+}
+/* madia header */
