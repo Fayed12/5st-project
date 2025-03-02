@@ -6,3 +6,96 @@
     width: 67.5px;
 }
 /* end content */
+.frinds-content{
+    grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+    margin-bottom: 20px;
+}
+@media (max-width:768px) {
+    .frinds-content{
+        grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    }
+}
+.frinds-content .box .call i{
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    color: #727171;
+    background-color: var(--hover-color);
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.frinds-content .box .call i:first-child{
+    margin-right: 10px;
+}
+.frinds-content .box .call i:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.frinds-content .box .box-head img{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: var(--main-transition);
+}
+.frinds-content .box .box-head img:hover{
+    transform: scale(1.2);
+}
+.frinds-content .box .box-head h3{
+    margin-bottom: 10px;
+}
+.frinds-content .box .box-head span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #999;
+}
+.frinds-content .box .box-content {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 2px solid var(--hover-color);
+    border-bottom: 2px solid var(--hover-color);
+
+}
+.frinds-content .box .box-content .stats span{
+    margin-bottom: 10px;
+}
+.frinds-content .box .box-content .stats span i{
+    margin-right: 10px;
+    font-size: 15px;
+}
+.frinds-content .box .box-content > span:last-child{
+    color: rgb(255, 215, 0 , .3);
+    font-size: 45px;
+    font-weight: 600;
+}
+.frinds-content .box .box-footer{
+    font-size: 13px;
+    color: #999;
+}
+.frinds-content .box .box-footer .links a:first-child ,
+.frinds-content .box .box-footer .links a:last-child{
+    display: inline-block;
+    font-size: 15;
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: var(--main-transition);
+}
+.frinds-content .box .box-footer .links a:last-child{
+    background-color: #f44336;
+}
+.frinds-content .box .box-footer .links a:hover{
+    transform: scale(1.09);
+}
+@media (max-width:786px) {
+    .frinds-content .box .box-footer{
+        font-size: 10px;
+    }
+}

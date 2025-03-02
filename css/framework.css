@@ -66,13 +66,19 @@
 .text-right{
     text-align: right;
 }
+
 .m-background{
     background-color:white;
 }
+
 .dirrction-rtl{
     direction: rtl;
     text-align: right;
 }   
+
+.span-block{
+    display: block;
+}
 /*end main page  */
 /* profile page */
 .box-margin{
