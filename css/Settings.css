@@ -6,3 +6,150 @@
     width: 87.5px;
 }
 /* end content */
+.setting-content{
+    grid-template-columns:repeat( auto-fill , minmax(45% , 1fr)) ;
+    margin-bottom: 20px;
+}
+@media (max-width:992px) {
+    .setting-content{
+        grid-template-columns:repeat( auto-fill , minmax(300px , 1fr)) ;
+    }
+}
+.setting-content .site-control .check{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.setting-content .site-control .check h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.setting-content .site-control .check p{
+    font-weight: normal;
+    font-size: 14px;
+    color: #999;
+}
+.setting-content .site-control textarea{
+    min-height: 150px;
+    resize: none;
+    border-radius: 10px;
+    border: 2px solid var(--hover-color);
+    display: block;
+    padding: 10px;
+    transition: 1s;
+    outline: none;
+    z-index: 100;
+    transition: all .5s;
+}
+.setting-content .site-control .label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: var(--main-transition);
+    color: #999;
+    font-size: 13px;
+}
+.setting-content .site-control textarea:focus {
+    border: 2px solid var(--main-color);
+}
+.setting-content .site-control textarea:focus + .label {
+    transform: translateY(-22.5px);
+    background-color: white;
+    padding: 5px 10px;
+    z-index: 101;
+    color: initial;
+}
+/* end setting */
+/* start info */
+.setting-content .general-info form{
+    margin-top: 20px;
+}
+.setting-content .general-info form  label{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #777;
+}
+.setting-content .general-info form input{
+    color: #999;
+    font-size: 13px;
+    min-height: 40px;
+    text-indent: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid var(--hover-color);
+}
+.setting-content .general-info form .email{
+    display: inline-flex;
+    width: calc(100% - 100px);
+    cursor: no-drop;
+}
+.setting-content .general-info form a{
+    color: white;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+/* end info */
+/* start Security */
+.Security .password , .Security .factor{
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--hover-color);
+}
+.Security .password{
+    margin-top: 15px;
+}
+.Security div .text h4{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.Security div .text p{
+    color: #999;
+    font-size: 13px;
+}
+.Security .password a{
+    color:white ;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Security .devices{
+    margin-bottom: 20px;
+}
+.Security .devices a{
+    background-color: var(--hover-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* end Security */
+/* start social */
+.social .box label{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--hover-color);
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ddd;
+    color: #999;
+    transition: var(--main-transition);
+}
+.social .box input{
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: var(--hover-color);
+    text-indent: 5px;
+    border-radius: 0 10px 10px 0;
+}
+.social .box:focus-within label{
+    color: initial;
+}
+/* end social */

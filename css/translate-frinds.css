@@ -1,0 +1,8 @@
+.frinds-content .box .call i:first-child{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.frinds-content .box .box-content .stats span i{
+    margin-right: 0px;
+    margin-left: 10px;
+}

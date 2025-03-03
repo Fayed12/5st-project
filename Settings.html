@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/framework.css">
     <!-- main css file -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- profile -->
+     <link rel="stylesheet" href="css/profile.css">
     <!-- main Settings css file -->
      <link rel="stylesheet" href="css/Settings.css">
     <!-- font -->
@@ -90,6 +92,93 @@
                 </div>
             </div>
             <h2 class="header-word p-relative">Settings</h2>
+            <div class="setting-content m-margin d-grid gap">
+                <div class="site-control m-padding m-background border-radius">
+                    <h3 class="main-head-h3">Site Control</h3>
+                    <p class="main-para-h3-p">Control The Website If There Is Maintenance</p>
+                    <div class="check d-flex justify-between align-center">
+                        <div class="text">
+                            <h4>Website Control</h4>
+                            <p>Open/Close Website And Type The Reason</p>
+                        </div>
+                        <label>
+                            <input type="checkbox" checked class="checkbox-input">
+                            <div class="switch"></div>
+                        </label>
+                    </div>
+                    <div class="text-area p-relative">
+                        <textarea name="message" class=" w-100"></textarea>
+                        <div class="label">Close message content</div>
+                    </div>
+                </div>
+                <div class="general-info m-padding m-background border-radius">
+                    <h3 class="main-head-h3">General Info</h3>
+                    <p class="main-para-h3-p">General Information About Your Account</p>
+                    <form>
+                        <div class="input">
+                            <label for="fname" class="span-block">First Name</label>
+                            <input class="w-100" id="#fname" type="text" placeholder="First Name">
+                        </div>
+                        <div class="input">
+                            <label for="lname" class="span-block">First Name</label>
+                            <input class="w-100" id="lname" type="text" placeholder="First Name">
+                        </div>
+                        <div class="details">
+                            <label for="email" class="span-block">First Name</label>
+                            <input class="w-100 email" type="email" placeholder="o@gmail.com" disabled>
+                            <a href="#">Change</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="Security m-padding m-background border-radius">
+                    <h3 class="main-head-h3">Security Info</h3>
+                    <p class="main-para-h3-p">Security Information About Your Account</p>
+                    <div class="password d-flex justify-between align-center">
+                        <div class="text">
+                            <h4>password</h4>
+                            <p>Last Change On 25/10/2021</p>
+                        </div>
+                        <a href="#">Change</a>
+                    </div>
+                    <div class="factor d-flex justify-between align-center">
+                        <div class="text">
+                            <h4>Two-Factor Authentication</h4>
+                            <p>Enable/Disable The Feature</p>
+                        </div>
+                        <label>
+                            <input type="checkbox" checked class="checkbox-input">
+                            <div class="switch"></div>
+                        </label>
+                    </div>
+                    <div class="devices d-flex justify-between align-center">
+                        <div class="text">
+                            <h4>Devices</h4>
+                            <p>Check The Login Devices List</p>
+                        </div>
+                        <a href="#">Devices</a>
+                    </div>
+                </div>
+                <div class="social m-padding m-background border-radius">
+                    <h3 class=" main-head-h3">Social Info</h3>
+                    <p class="main-para-h3-p margin-bottom">Social Media Information</p>
+                    <div class="box d-flex w-100 margin-bottom">
+                        <label><i class="fa-brands fa-facebook-f"></i></label>
+                        <input type="text" class="w-100" placeholder="Facebook Username">
+                    </div>
+                    <div class="box d-flex w-100 margin-bottom">
+                        <label><i class="fa-brands fa-x-twitter"></i></label>
+                        <input type="text" class="w-100" placeholder="twitter Username">
+                    </div>
+                    <div class="box d-flex w-100 margin-bottom">
+                        <label><i class="fa-brands fa-linkedin-in"></i></label>
+                        <input type="text" class="w-100" placeholder="linkedin-in Username">
+                    </div>
+                    <div class="box d-flex w-100">
+                        <label><i class="fa-brands fa-github"></i></label>
+                        <input type="text" class="w-100" placeholder="github Username">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
