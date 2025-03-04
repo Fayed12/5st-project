@@ -1,0 +1,39 @@
+/* start site  */
+.setting-content .site-control .label{
+    right: 10px;
+    width: fit-content;
+    padding: 5px 10px;
+}
+/* end site  */
+/* start social */
+.social .box label{
+    border-radius: 0 10px 10px 0;
+}
+.social .box input{
+    border-radius: 10px 0 0 10px;
+}
+/* end social */
+/* start  Widgets*/
+.Widgets div label {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+.Widgets div label::before{
+    right: 0;
+}
+.Widgets div label::after{
+    right: 0;
+}
+/* end  Widgets*/
+/* start Backup */
+.Backup form label{
+    padding-left: 0px;
+    padding-right: 30px;
+}
+.Backup form label::before{
+    right: 0;
+}
+.Backup form label::after{
+    right: 3px;
+}
+/* end Backup */

@@ -914,6 +914,7 @@ body{
 .table table tr td img{
     width: 30px;
     border-radius: 50%;
+    transition: var(--main-transition);
 }
 .table table tr td img:nth-child(2){
     position: relative;
@@ -935,6 +936,11 @@ body{
     padding: 5px 10px;
     border-radius: 10px;
     color: white;
+}
+.table table tr td img:hover{
+    transform: scale(1.11);
+    position: relative;
+    z-index: 100;
 }
 .table table tr:first-child td:last-child span{
     background-color: #f59e0b;

@@ -1,0 +1,17 @@
+.plans-content .all i[class *="circle-info"]{
+    right: 95%;
+}
+.plans-content .all i[class *="check"]{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.plans-content .all i[class *="xmark"]{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+@media (max-width:768px) {
+    .plans-content .all i[class *="circle-info"]{
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+}
